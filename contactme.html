@@ -3,167 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <style>
-        /* Reset & Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIj4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ3aGl0ZSIvPgogIDxwYXRoIGQ9Ik0wLDQwMEwwLDIwMFYwIEwxMDAsMjAwIEwyMDAsMCAzMjAsMjAwIDQwMCwwIDUwMCwyMDAgNjAwLDAgNjAwLDQwMEwwLDQwMFoiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuMiIvPgo8L3N2Zz4=')
-                      no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Header Navigation */
-        .header {
-            background-color: #007B7B; /* Teal */
-            padding: 15px 20px;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-        }
-
-        .header a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .header a:hover {
-            color: #cce5e5;
-        }
-
-        /* Main Content */
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            position: relative;
-            color: #333;
-        }
-
-        h1::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-            width: 100px;
-            height: 4px;
-            background-color: #007BFF; /* Biru terang */
-            border-radius: 2px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .contact-icon {
-            font-size: 1.5rem;
-            margin-right: 15px;
-            color: #007B7B;
-        }
-
-        .contact-text {
-            font-size: 1.1rem;
-            word-break: break-all;
-        }
-
-        /* Footer Decorative Pattern */
-        .footer-pattern {
-            background: #007B7B;
-            padding: 15px 0;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .pattern {
-            color: white;
-            font-size: 2rem;
-            letter-spacing: 5px;
-            font-family: monospace;
-            font-weight: bold;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            .contact-item {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .contact-icon {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
+    <title>Contact Me | Farrel Zacky</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="achievement.html">Achievement</a></li>
+                    <li><a href="myinfo.html">My Info</a></li>
+                    <li><a href="contactme.html" class="active">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Header Navigation -->
-    <div class="header">
-        <a href="home.html">Home</a>
-        <a href="achievement.html">Achievement</a>
-        <a href="myinfo.html">My Info</a>
-        <a href="contactme.html">Contact Me</a>
-    </div>
-
-    <!-- Main Content -->
-    <div class="container">
-        <h1>Contact Me</h1>
-
-        <!-- Phone -->
-        <div class="contact-item">
-            <span class="contact-icon">📞</span>
-            <span class="contact-text">https://wa.me/6281554054198</span>
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p><img src="images/whatsapp.png" alt="WhatsApp"> <a href="https://wa.me/6281554054198" target="_blank">https://wa.me/6281554054198</a></p>
+            <p><img src="images/instagram.png" alt="Instagram"> <a href="https://www.instagram.com/siibuung_" target="_blank">https://www.instagram.com/siibuung_</a></p>
+            <p><img src="images/email.png" alt="Email"> zackyaundra@gmail.com</p>
         </div>
+    </section>
 
-        <!-- Instagram -->
-        <div class="contact-item">
-            <span class="contact-icon">📷</span>
-            <span class="contact-text">https://www.instagram.com/silbuung_</span>
-        </div>
-
-        <!-- Email -->
-        <div class="contact-item">
-            <span class="contact-icon">✉️</span>
-            <span class="contact-text">zackysundra@gmail.com</span>
-        </div>
-    </div>
-
-    <!-- Footer Pattern -->
-    <div class="footer-pattern">
-        <div class="pattern"></div>
-    </div>
-
+    <footer>
+        <div class="footer-pattern"></div>
+    </footer>
 </body>
 </html>
