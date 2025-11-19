@@ -130,14 +130,29 @@ color: #0a3d3f;
   margin-right: 10px;
 }
 
-/* Footer pattern */
-.footer-pattern {
-  background-color: #0b787a;
-  padding: 20px;
-  background-image: url('images/pattern.png');
-  background-repeat: repeat-x;
-  background-size: contain;
+html, body {
+    height: 100%;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer selalu di bawah */
+footer {
+    margin-top: auto; /* kunci agar footer turun ke bawah */
+    background-color: #0b787a;
+    padding: 20px;
+    background-image: url('images/pattern.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+.footer-pattern {
+    height: 20px; /* bisa diubah sesuai kebutuhan */
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -158,4 +173,39 @@ color: #0a3d3f;
     display: block;
     margin: 10px 0;
   }
+}
+.skills-section {
+    padding: 40px 60px;
+    text-align: left;
+}
+
+.skills-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.skills-content h3 {
+    font-size: 22px;
+    margin-top: 25px;
+    color: #004d4d;
+}
+
+.skills-content ul {
+    margin-left: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.skills-content li {
+    margin-bottom: 8px;
+}
+
+.navbar {
+    background-color: #006d70;
+    padding: 15px 0;
+}
+
+.nav-links li a {
+    padding: 10px 20px;
+    display: inline-block;
 }
